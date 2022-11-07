@@ -1,2 +1,2 @@
 # Framework
-The Figments Framework
+The Figments framework
