@@ -3,7 +3,7 @@ using Godot;
 
 namespace Figments.James.Objects
 {
-    public class Item // : Figments.Objects.Item
+    public class Item : Figments.Objects.Item
     {
         
     }

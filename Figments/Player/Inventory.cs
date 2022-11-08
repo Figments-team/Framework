@@ -9,6 +9,17 @@ namespace Figments.Player
         private List<Figments.Objects.Item> items = new List<Figments.Objects.Item>();
         public List<Figments.Objects.Item> Items { get => items; }
 
+        public bool IsEmpty 
+        {
+            get
+            {
+                if(items.Count == 0)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
         public void AddItem(Figments.Objects.Item itemToAdd)
         {
             items.Add(itemToAdd);
