@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Godot;
 
-namespace Figments
+namespace Figments.Player
 {
     public class Inventory
     {
-        private List<Figments.Objects.Item> items;
+        private List<Figments.Objects.Item> items = new List<Figments.Objects.Item>();
         public List<Figments.Objects.Item> Items { get => items; }
 
         public void AddItem(Figments.Objects.Item itemToAdd)
