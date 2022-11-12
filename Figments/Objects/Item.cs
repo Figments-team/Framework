@@ -12,11 +12,5 @@ namespace Figments.Objects
 
         private Figments.Objects.BehaviourData itemBehaviour;
         public Figments.Objects.BehaviourData ItemBehaviour { get => itemBehaviour; }
-
-        public static explicit operator Item(object objectToCast)
-        {
-            
-            return new Item();
-        }
     }
 }
