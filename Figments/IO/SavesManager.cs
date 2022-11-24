@@ -5,9 +5,13 @@ using Godot;
 
 namespace Figments.IO
 {
-    public static class SavesFolder
+    public static class SavesManager
     {
-        private static Tuple<PathType, string>[] RequiredStructure;
+        public enum PathType { Directory, File }
+        private static Tuple<PathType, string>[] RequiredStructure =
+        {
+            //new Tuple<PathType, string>(PathType.Directory, "")
+        };
         
         public static bool IsReady
         {
@@ -31,6 +35,11 @@ namespace Figments.IO
                         System.IO.Directory.CreateDirectory(ProjectSettings.GlobalizePath(path.Item2));
                     else if(path.Item1 == PathType.File)
                         System.IO.File.Create(ProjectSettings.GlobalizePath(path.Item2));
+        }
+
+        public static void UpdateSave()
+        {
+            
         }
     }
 }
